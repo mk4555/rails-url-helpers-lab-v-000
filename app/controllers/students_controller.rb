@@ -13,6 +13,7 @@ class StudentsController < ApplicationController
     @student = Student.set_student
     @student.active = true
     @student.save
+    redirect_to student_path(@student)
   end
 
   private
